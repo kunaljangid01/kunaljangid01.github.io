@@ -9,7 +9,7 @@ const Footer = () => {
           <h5 className="text-xl font-bold mb-3">VisDom</h5>
           <p>203 - VisDom Lab, Main(Plasma) Building,</p>
           <p>IISER Bhopal</p>
-          <p>Phone No.: +91 755 269 2699</p>
+          <p>Phone No.: +91 755 269 2689</p>
         </div>
 
         {/* Right Section */}

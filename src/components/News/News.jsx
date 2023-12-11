@@ -46,99 +46,102 @@ const NewsCard = (props) => {
 
 }
 
+
 const News = () => {
     const [news, setNews] = useState([]);
-    // Slider settings
-    const settings = {
-        dots: true,
-        infinite: true,
-        speed: 500,
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        autoplay: true,
-        autoplaySpeed: 2000,
-        // responsive: [
-        //     {
-        //         breakpoint: 1024,
-        //         settings: {
-        //             slidesToShow: 2,
-        //             slidesToScroll: 2,
-        //             infinite: true,
-        //             dots: true
-        //         }
-        //     },
-        //     {
-        //         breakpoint: 600,
-        //         settings: {
-        //             slidesToShow: 2,
-        //             slidesToScroll: 2
-        //         }
-        //     }
-        // ]
-    };
-    // if (!news || news.length === 0) {
-    //     return <div>Loading news...</div>; // Or any other placeholder content
-    // }
-    
+
+    useEffect(() => {
+        fetch('/data/news.json'
+            , {
+                headers: {
+                    'Content-Type': 'application/json',
+                    'Accept': 'application/json'
+                }
+            }
+        )
+            .then(function (response) {
+                return response.json();
+            })
+            .then(function (myJson) {
+                setNews(myJson);
+            });
+    }, []);
 
     return (
         <div className='newsWrapper'>
-            <h1>Latest News</h1>
-            <Slider {...settings}>
-            
-                {news.map(newsItem => (
-                    <NewsCard key={newsItem.title} news={newsItem} />
-                ))}
-            </Slider>
-            :
-                <div>
-                       Could not load news. Either data is not available or there is an error.
-                </div>
+            <h1>NEWS</h1>
+            <div className='newsCardWrappers'>
+                {
+                    news ?
+                        news.map((newsItem) => {
+                            return (
+                                <NewsCard key={newsItem.title} news={newsItem} />
+                            )
+                        })
+                        :
+                        <div>
+                            Could not load news. Either data is not available or there is an error.
+                        </div>
+                }
+            </div>
         </div>
     );
-};
+}
 
 export default News;
 
+
+
 // const News = () => {
 //     const [news, setNews] = useState([]);
-
-//     useEffect(() => {
-//         fetch('/data/news.json'
-//             , {
-//                 headers: {
-//                     'Content-Type': 'application/json',
-//                     'Accept': 'application/json'
-//                 }
-//             }
-//         )
-//             .then(function (response) {
-//                 return response.json();
-//             })
-//             .then(function (myJson) {
-//                 setNews(myJson);
-//             });
-//     }, []);
+//     // Slider settings
+//     const settings = {
+//         dots: true,
+//         infinite: true,
+//         speed: 500,
+//         slidesToShow: 1,
+//         slidesToScroll: 1,
+//         autoplay: true,
+//         autoplaySpeed: 2000,
+//         // responsive: [
+//         //     {
+//         //         breakpoint: 1024,
+//         //         settings: {
+//         //             slidesToShow: 2,
+//         //             slidesToScroll: 2,
+//         //             infinite: true,
+//         //             dots: true
+//         //         }
+//         //     },
+//         //     {
+//         //         breakpoint: 600,
+//         //         settings: {
+//         //             slidesToShow: 2,
+//         //             slidesToScroll: 2
+//         //         }
+//         //     }
+//         // ]
+//     };
+//     // if (!news || news.length === 0) {
+//     //     return <div>Loading news...</div>; // Or any other placeholder content
+//     // }
+    
 
 //     return (
 //         <div className='newsWrapper'>
-//             <h1>NEWS</h1>
-//             <div className='newsCardWrappers'>
-//                 {
-//                     news ?
-//                         news.map((newsItem) => {
-//                             return (
-//                                 <NewsCard key={newsItem.title} news={newsItem} />
-//                             )
-//                         })
-//                         :
-//                         <div>
-//                             Could not load news. Either data is not available or there is an error.
-//                         </div>
-//                 }
-//             </div>
+//             <h1>Latest News</h1>
+//             <Slider {...settings}>
+            
+//                 {news.map(newsItem => (
+//                     <NewsCard key={newsItem.title} news={newsItem} />
+//                 ))}
+//             </Slider>
+//             :
+//                 <div>
+//                        Could not load news. Either data is not available or there is an error.
+//                 </div>
 //         </div>
 //     );
-// }
+// };
 
 // export default News;

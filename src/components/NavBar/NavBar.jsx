@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 //react icons
 import { FaBarsStaggered, FaBook, FaXmark } from "react-icons/fa6";
 import { useLocation } from "react-router-dom";
-import visdomLogoNav from '../../assets/visdomnav6.png';
+import visdomLogoNav from '../../assets/visdomnavimg7.png';
 
 const Navbar = () =>{
     

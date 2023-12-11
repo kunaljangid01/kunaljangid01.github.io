@@ -1,3 +1,14 @@
+Update the website and again deploy it on github:
+
+  1.  git init
+  2.  git add .
+  3.  git commit -m "Initial commit"
+  4.  git remote add origin https://github.com/VisDomLab/VisDomLab.github.io.git
+  5.  git push -u origin master
+  6.  npm install --save gh-pages
+  7.  npm run deploy
+  
+  
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

@@ -8,6 +8,26 @@ import { FaLink } from 'react-icons/fa6';
 const MemberCard = (props) => {
     const [showDetails, setShowDetails] = useState(false);
 
+    const [email, setEmail] = useState(props.email ? scrambleEmail(props.email) : ''); // Initialize with scrambled email if available
+    const [isEmailScrambled, setIsEmailScrambled] = useState(true);
+
+    function scrambleEmail(inputEmail) {
+        // Ensure the email is not undefined or null
+        if (!inputEmail) {
+            return '';
+        }
+        return inputEmail.split('').sort(() => Math.random() - 0.5).join('');
+    }
+
+    const toggleEmail = () => {
+        if (isEmailScrambled) {
+            setEmail(props.email); // Set to original email
+        } else {
+            setEmail(scrambleEmail(props.email)); // Rescramble
+        }
+        setIsEmailScrambled(!isEmailScrambled);
+    };
+
     return (
         <Card className='memberCardMui' >
             <CardMedia
@@ -25,7 +45,7 @@ const MemberCard = (props) => {
                     {props.designation}
                 </Typography>
 
-                <Typography variant="body2" color="textPrimary" component="p" align='center'>
+                <Typography variant="body1" color="textPrimary" component="p" align='center'>
                     {props.about}
                 </Typography>
 
@@ -41,7 +61,8 @@ const MemberCard = (props) => {
                             {
                                 props.email &&
                                 <div style={{ margin: "5px 0px", color: "black" }}>
-                                    Email: {props.email}
+                                    
+                                        Email: <span style={{ cursor: 'pointer', textDecoration: 'underline' }} onClick={toggleEmail}>{email}</span>
                                 </div>
                             }
                             {

@@ -46,7 +46,10 @@ const MemberSection = () => {
     return (
         <div className='members_section'>
             <div className='members_head' >
-                <MemberCard pictureURL={process.env.PUBLIC_URL + "/images/vinod.png"} name="Vinod K Kurmi" designation="Assistant Professor, DSE, IISER Bhopal" about="Mail Id: vindokk@iiserb.ac.in" moreInfo="My research areas are related to Computer Vision (CV), Deep Learning (DL) and Machine Learning (ML). Currently, I am working on projects related to NLP and speech processing. I am interested in working in fairness and multi-modal alignment problems." social="https://vinodkkurmi.github.io/" />
+                <MemberCard pictureURL={process.env.PUBLIC_URL + "/images/vinod.png"} name="Vinod K Kurmi" 
+                designation="Assistant Professor" about="DSE, IISER Bhopal" email="vindokk@iiserb.ac.in" 
+                moreInfo="My research areas are related to Computer Vision (CV), Deep Learning (DL) and Machine Learning (ML). Currently, I am working on projects related to NLP and speech processing. I am interested in working in fairness and multi-modal alignment problems." 
+                social="https://vinodkkurmi.github.io/" />
             </div>
             {members.length > 0 && <h1>Current Group Members</h1>}
             <div className='group_members'>
@@ -54,7 +57,7 @@ const MemberSection = () => {
                     members ?
                         members.map((member) => {
                             return (
-                                <MemberCard key={member} pictureURL={member.pictureURL} name={member.name} about={member.about} moreInfo={member.moreInfo} email={member.email} social={member.social}  social_2={member.social_2}/>
+                                <MemberCard key={member} pictureURL={member.pictureURL} name={member.name} designation={member.designation} about={member.about} moreInfo={member.moreInfo} email={member.email} social={member.social}  social_2={member.social_2}/>
                             )
                         })
                         :

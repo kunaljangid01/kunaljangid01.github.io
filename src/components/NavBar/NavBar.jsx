@@ -1,10 +1,14 @@
 import React, { useEffect, useState }  from "react";
 import { Link } from "react-router-dom";
+import './NavBar.css';
 
 //react icons
 import { FaBarsStaggered, FaBook, FaXmark } from "react-icons/fa6";
 import { useLocation } from "react-router-dom";
 import visdomLogoNav from '../../assets/logo_2.png';
+
+import visdomLogo from '../../assets/visdom_small2.png';
+import iiserbLogo from '../../assets/iiserb_small3.png';
 
 const Navbar = () =>{
     
@@ -49,10 +53,14 @@ const Navbar = () =>{
 
     return (
         <header className="w-full bg-transparent relative top-0 left-0 right-0 transition-all ease-in duration-300 font-bold">
-            <nav className={`py-7 border-b-2 lg:px-24 px-4 ${isSticky ? "sticky top-0 left-0 right-0" : ""}`}>
-                <div className="flex items-center text-base gap-8">
+            <nav className={` navbar py-7 border-b-2 lg:px-24 px-4 ${isSticky ? "sticky top-0 left-0 right-0" : ""}`}>
+                <div className=" logo-container flex items-center text-base gap-8">
                     {/* logo */}
-                    <Link to = "/" className="text-2sxl font-bold flex items-baseline self-start grow whitespace-nowrap	"><img src={visdomLogoNav} alt="Logo" /></Link>
+              
+                    <Link to = "https://www.iiserb.ac.in/" className="text-2sxl font-bold flex items-baseline self-start  whitespace-nowrap	" sx={{marginRight:'0px'}}><img src={iiserbLogo} alt="Logo" sx={{marginLeft:'0px'}}/></Link>
+                    <Link to = "/" className="text-2sxl font-bold flex items-baseline self-start grow whitespace-nowrap	"><img src={visdomLogo} alt="Logo" /></Link>
+                    
+                    
 
                     {/* nav items for large devices */}
                     <ul className="md:flex space-x-12 hidden text-bold">

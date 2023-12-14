@@ -1,0 +1,34 @@
+
+.logo {
+  margin-right: 10px;
+}
+
+
+.logo {
+  margin-right: 0; 
+}
+
+.logo-container {
+  display: flex;
+  justify-content: space-between; 
+}
+.logo-container {
+  display: flex;
+  justify-content: flex-start; 
+}
+
+.logo_left{
+    margin-left: 0px;
+}
+/* NavBar.css */
+.navbar .logo-container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; /* Align logos to the start of the container */
+  }
+  
+  .navbar .logo {
+    margin-right: 0; /* Adjust or remove margin as needed */
+    /* Other styles for your logo */
+  }
+  

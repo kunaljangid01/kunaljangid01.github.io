@@ -54,15 +54,31 @@ const MemberCard = (props) => {
                         <Typography variant="body2" color="textSecondary" component="p">
                             {
                                 props.moreInfo &&
-                                <div>
+                                <div style={{textJustify:"auto"}}>
                                     {props.moreInfo}
                                 </div>
                             }
                             {
                                 props.email &&
                                 <div style={{ margin: "5px 0px", color: "black" }}>
-                                    
-                                        Email: <span style={{ cursor: 'pointer', textDecoration: 'underline' }} onClick={toggleEmail}>{email}</span>
+                                    {/* Email: <span style={{ cursor: 'pointer', textDecoration: 'underline' }} >{email}</span><Button onClick={() => toggleEmail(!toggleEmail)} style={{ textAlign:"right", color:"#828170"}}>
+                                    {toggleEmail ? 'Unscrambled' : 'Scrambled'}
+                                    </Button> */}
+                                        {/* Email: <span   
+                                        onClick={() => toggleEmail(!toggleEmail)}>
+                                             <span style={{ cursor: 'pointer', textDecoration: 'underline' }}>{email}</span><span> </span> */}
+                                            {/* <span style={{ textAlign:"right", color:"#828170"}}>{toggleEmail ? 'scrambled' : 'UnScrambled'}</span> */}
+                                             {/* {email} {toggleEmail ? 'Unscrambled' : 'Scrambled'} */}
+                                            {/* {email +' \n'+    (toggleEmail ? 'Unscrambled' : 'Scrambled')} */}
+                                            {/* {`${email} ${toggleEmail ? 'Unscrambled' : 'Scrambled'}`} */}
+                                        {/* <Button color="primary" onClick={() => toggleEmail(!toggleEmail)} style={{ marginTop: "auto" }}>
+                                         {toggleEmail ? 'Unscrambled' : 'Scrambled'}
+                                        </Button> */}
+                                        {/* </span> */}
+                                        Email: <span>{email}</span>
+                        {/* <Button size="small" color="primary" onClick={toggleEmail}>
+                            {isEmailScrambled ? 'Unscramble Email' : 'Scramble Email'}
+                        </Button> */}
                                 </div>
                             }
                             {
@@ -87,9 +103,31 @@ const MemberCard = (props) => {
                     </div>
                 )}
             </CardContent>
-            <Button color="primary" onClick={() => setShowDetails(!showDetails)} style={{ marginTop: "auto" }}>
-                {showDetails ? 'Show Less' : 'Show More'}
-            </Button>
+            {/* <Button color="primary" onClick={() => setShowDetails(!showDetails)} style={{ marginTop: "auto" }}>
+          
+                {showDetails ? 'Show Less' : 'Show More'} 
+            </Button> */}
+            {/* <div style={{ display: 'flex', justifyContent: 'flex-end', alignItems: 'center', padding: '0 16px' }}>
+                {showDetails && (
+                    <Button size="small" color="primary" onClick={toggleEmail} style={{ marginRight: '8px'  }}>
+                        {isEmailScrambled ? 'Unscramble Email' : 'Scramble Email'}
+                    </Button>
+                )}
+                <Button color="primary" onClick={() => setShowDetails(!showDetails)} style={{ marginTop: "auto" }}>
+                    {showDetails ? 'Show Less' : 'Show More'}
+                </Button>
+            </div> */}
+            <div style={{ display: 'flex', justifyContent: showDetails ? 'flex-start' : 'center'}}>
+                {showDetails && (
+                    <Button size="small" color="primary" onClick={toggleEmail} style={{ marginRight: '8px', color:"#767676" }}>
+                        {isEmailScrambled ? 'Unscramble Email' : 'Scramble Email'}
+                    </Button>
+                )}
+                <Button color="primary" onClick={() => setShowDetails(!showDetails)} style={{ marginTop: "auto", marginLeft: showDetails ? '8px' : '0' }}>
+                    {showDetails ? 'Show Less' : 'Show More'}
+                </Button>
+            </div>
+
         </Card>
     );
 }

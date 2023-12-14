@@ -77,6 +77,12 @@ const MemberCard = (props) => {
                                     <a href={props.social_2} target="_blank" rel="noreferrer" style={{ display: "flex", flexWrap: "nowrap", gap: "5px", alignItems: "center" }}>LinkedIn <FaLink /> </a>
                                 </div>
                             }
+                            {
+                                props.social_3 &&
+                                <div style={{ margin: "5px 0px", color: "blue" }}>
+                                    <a href={props.social_3} target="_blank" rel="noreferrer" style={{ display: "flex", flexWrap: "nowrap", gap: "5px", alignItems: "center" }}>G-Scholar <FaLink /> </a>
+                                </div>
+                            }
                         </Typography>
                     </div>
                 )}

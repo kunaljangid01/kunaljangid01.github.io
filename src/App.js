@@ -5,6 +5,7 @@ import News from './components/News/News';
 import NavBar from './components/NavBar/NavBar';
 import Footer from './components/Footer/Footer';
 
+
 function App() {
   return (
     <>
@@ -12,7 +13,7 @@ function App() {
       <NavBar />
       <HeroSection />
       <UsefulLinks />
-      <News />
+      {/* <News /> */}
       <Footer />
     </div>
     </>

@@ -43,7 +43,7 @@ const MemberSection = () => {
     }, []);
 
 
-    return (
+    return ( 
         <div className='members_section'>
             <div className='members_head' >
                 <MemberCard pictureURL={process.env.PUBLIC_URL + "/images/vinod.png"} name="Vinod K Kurmi" 
@@ -57,7 +57,7 @@ const MemberSection = () => {
                     members ?
                         members.map((member) => {
                             return (
-                                <MemberCard key={member} pictureURL={member.pictureURL} name={member.name} designation={member.designation} about={member.about} moreInfo={member.moreInfo} email={member.email} social={member.social}  social_2={member.social_2}/>
+                                <MemberCard key={member} pictureURL={member.pictureURL} name={member.name} designation={member.designation} about={member.about} moreInfo={member.moreInfo} email={member.email} social={member.social}  social_2={member.social_2} social_3={member.social_3}/>
                             )
                         })
                         :

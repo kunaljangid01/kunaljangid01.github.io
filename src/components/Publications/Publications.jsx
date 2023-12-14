@@ -35,7 +35,7 @@ const PublicationCard = (props) => {
                                 {name}
                             </Button>
                         )
-                    })
+                    }) 
                     }
                     {props.publication.details && Object.entries(props.publication.details).map(([name, value]) => {
                         return (

@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 //react icons
 import { FaBarsStaggered, FaBook, FaXmark } from "react-icons/fa6";
 import { useLocation } from "react-router-dom";
-import visdomLogoNav from '../../assets/visdomnavimg7.png';
+import visdomLogoNav from '../../assets/logo_2.png';
 
 const Navbar = () =>{
     
@@ -43,6 +43,7 @@ const Navbar = () =>{
     const navItems = [
         {link: "Home", path: "/"},
         {link: "Members", path: "/group-members"},
+        {link: "Projects", path: "/projects"},
         {link: "Publications", path: "/publications"},
     ]
 

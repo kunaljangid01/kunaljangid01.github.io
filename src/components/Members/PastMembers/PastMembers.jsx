@@ -9,7 +9,7 @@ const JRFPastMembersCard = (props) => {
         <Card className='jrfpastmembersCardMui' variant='outlined' sx={{
             ':hover': {
                 transform: 'scale(1.05)',
-            },
+            },backgroundColor:'#FAFAFA' 
         }}>
             <CardContent >
                 <Typography variant="h5" component="div" align='center'>
@@ -29,7 +29,7 @@ const BSMSPastMembersCard = (props) => {
         <Card className='bsmspastmembersCardMui' variant='outlined' sx={{
             ':hover': {
                 transform: 'scale(1.05)',
-            },
+            },backgroundColor:'#FAFAFA' 
         }}>
             <CardContent>
                 <Typography variant="h5" component="div" align='center'>

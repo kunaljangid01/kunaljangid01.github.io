@@ -9,7 +9,7 @@ const BSMSMembersCard = (props) => {
         <Card className='bsmsmembersCardMui' variant='outlined' sx={{
             ':hover': {
                 transform: 'scale(1.05)',
-            }, backgroundColor:'#FAFAFA'  
+            },  
         }}>
             {/*#F4F4F4*/}
             <CardContent className='bsmsmemebrscontent'>

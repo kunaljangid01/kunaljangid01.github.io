@@ -51,7 +51,7 @@ const MemberSection = () => {
                 moreInfo="My research areas are related to Computer Vision (CV), Deep Learning (DL) and Machine Learning (ML). Currently, I am working on projects related to NLP and speech processing. I am interested in working in fairness and multi-modal alignment problems." 
                 social="https://vinodkkurmi.github.io/" />
             </div>
-            {members.length > 0 && <h1>Current Group Members</h1>}
+            {members.length > 0 && <h1  style={{marginTop:'70px'}}>Current Group Members</h1>}
             <div className='group_members'>
                 {
                     members ?

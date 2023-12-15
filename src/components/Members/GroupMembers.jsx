@@ -4,6 +4,8 @@ import './GroupMembers.css';
 import Navbar from '../NavBar/NavBar';
 import Collaborators from './Collaborators/Collaborators';
 import Footer from '../Footer/Footer';
+import PastMembers from './PastMembers/PastMembers';
+import BSMSMembers from './BSMSMembers/BSMSMembers'
 
 const GroupMembers = () => {
     return (
@@ -13,7 +15,9 @@ const GroupMembers = () => {
                 <div className='groupPhoto'>
                 </div>
                 <MemberSection />
+                <BSMSMembers/>
             </div>
+            <PastMembers />
             <Collaborators />
             <Footer />
         </>

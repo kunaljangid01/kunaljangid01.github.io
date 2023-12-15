@@ -15,7 +15,7 @@ const CollaboratorCard = (props) => {
                 <Typography variant="h5" component="div" align='center'>
                     {props.name}
                 </Typography>
-                <Typography variant="body1" color="textPrimary" component="p" >
+                <Typography variant="body1" color="textPrimary" component="p" align='center'>
                     {props.designation}
                 </Typography>
 

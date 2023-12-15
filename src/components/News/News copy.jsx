@@ -38,7 +38,7 @@ const NewsCard = (props) => {
                         {props.news.content}
                     </Typography>
                     {props.news.isnew &&
-                        <Typography variant='body2' component='div' color='error' sx={{padding: "2px", paddingBottom:'0px', paddingTop:'0px', background: "#FF4D4D", fontWeight:'500', color:"white", width:"fit-content", borderRadius:"4px", fontSize:'12.5px'}}>
+                        <Typography variant='body2' component='div' color='error' sx={{padding: "6px", background: "red", color:"white", width:"fit-content", borderRadius:"4px"}}>
                             New
                         </Typography>
                     }
@@ -50,54 +50,35 @@ const NewsCard = (props) => {
 
 }
 
-
-
-
-
-const News = () => {
-    const [news, setNews] = useState([]);
-    const handleDragStart = (e) => e.preventDefault();
-
-    useEffect(() => {
-        fetch('/data/news.json', {
-            headers: {
-                'Content-Type': 'application/json',
-                'Accept': 'application/json'
-            }
-        })
-        .then((response) => response.json())
-        .then((myJson) => {
-            setNews(myJson);
-        });
-    }, []);
-
-    // Prepare the carousel items from the news data
-    const carouselItems = news.map((newsItem) => (
-        <NewsCard key={newsItem.title} news={newsItem}  onDragStart={handleDragStart} role="presentation" />
+const News = ({ newsItems }) => {
+    // Check if newsItems is defined, if not, provide an empty array as default
+    const items = newsItems || [];
+  
+    // Prepare the items for the carousel
+    const carouselItems = items.map((item, index) => (
+      <div key={index} className="news-item">
+        <h3>{item.title}</h3>
+        <p>{item.description}</p>
+        {/* Add more content if needed */}
+      </div>
     ));
-
+  
     return (
-        <div className='newsWrapper news-carousel-container'>
-            <h1>NEWS</h1>
-            <AliceCarousel
-                mouseTracking
-                items={carouselItems}
-                autoPlay
-                autoPlayInterval={3000}
-                infinite
-                DotsControls
-                disableButtonsControls
-                responsive={{
-                    0: { items: 1 },
-                    1024: { items: 4 }, // Adjust number of items shown depending on screen width
-                }}
-                className='newsCarousel'
-            />
-        </div>
+      <div className="news-carousel-container">
+        <AliceCarousel
+          mouseTracking
+          items={carouselItems}
+          autoPlay
+          autoPlayInterval={3000}
+          infinite
+          disableDotsControls
+          disableButtonsControls
+        />
+      </div>
     );
-}
-
-export default News;
+  };
+  
+  export default News;
 
 //Default
 // const News = () => {

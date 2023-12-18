@@ -18,6 +18,9 @@ const JRFPastMembersCard = (props) => {
                 <Typography variant="body2" color="textPrimary" component="p" align='center' style={{fontSize:'15.5px'}}>
                     <b>{props.designation}</b>
                 </Typography>
+                <Typography variant="body2" color="textPrimary" component="p" align='center' style={{fontSize:'px'}}>
+                    {props.about}
+                </Typography>
 
             </CardContent>
         </Card>
@@ -37,6 +40,9 @@ const BSMSPastMembersCard = (props) => {
                 </Typography>
                 <Typography variant="body2" color="textPrimary" component="p" align='center' style={{fontSize:'px'}}>
                     <b>{props.designation}</b>
+                </Typography>
+                <Typography variant="body2" color="textPrimary" component="p" align='center' style={{fontSize:'px'}}>
+                    {props.about}
                 </Typography>
 
             </CardContent>
@@ -93,7 +99,7 @@ const PastMembersSection = () => {
                             jrfpastmembers ?
                             jrfpastmembers.map((member) => {
                                     return (
-                                        <JRFPastMembersCard key={member} name={member.name} designation={member.designation} />
+                                        <JRFPastMembersCard key={member} name={member.name} designation={member.designation}  about={member.about} />
                                     )
                                 })
                                 :
@@ -111,7 +117,7 @@ const PastMembersSection = () => {
                          bsmspastmembers ?
                          bsmspastmembers.map((member) => {
                                  return (
-                                     <BSMSPastMembersCard key={member} name={member.name} designation={member.designation} />
+                                     <BSMSPastMembersCard key={member} name={member.name} designation={member.designation} about={member.about}  />
                                  )
                              })
                              :

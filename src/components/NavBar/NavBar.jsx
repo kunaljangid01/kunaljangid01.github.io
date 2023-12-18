@@ -49,6 +49,7 @@ const Navbar = () =>{
         {link: "Members", path: "/group-members"},
         {link: "Projects", path: "/projects"},
         {link: "Publications", path: "/publications"},
+        // {link: "Resources", path: "/resources"},
     ]
 
     return (

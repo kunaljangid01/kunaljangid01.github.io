@@ -19,6 +19,9 @@ const BSMSMembersCard = (props) => {
                 <Typography variant="body2" color="textPrimary" component="p" align='center' style={{fontSize:'px'}}>
                     <b>{props.designation}</b>
                 </Typography>
+                <Typography variant="body2" color="textPrimary" component="p" align='center' style={{fontSize:'px'}}>
+                    {props.about}
+                </Typography>
 
             </CardContent>
         </Card>
@@ -60,7 +63,7 @@ const BSMSMembersSection = () => {
                             bsmsmembers ?
                             bsmsmembers.map((member) => {
                                     return (
-                                        <BSMSMembersCard key={member} name={member.name} designation={member.designation} />
+                                        <BSMSMembersCard key={member} name={member.name} designation={member.designation} about={member.about} />
                                     )
                                 })
                                 :

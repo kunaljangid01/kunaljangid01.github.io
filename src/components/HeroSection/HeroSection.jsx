@@ -6,7 +6,7 @@ import visdomLogoNav from '../../assets/visdomnav6.png';
 function HeroSection() {
     return (
         <div className="hero-section">
-            <div className="hero-section__logo">
+            <div className="hero-section__logo"> 
                 <img src={visdomLogo} alt="Logo" />
             </div>
             <div className="hero_section_about">

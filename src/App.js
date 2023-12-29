@@ -4,7 +4,7 @@ import UsefulLinks from './components/UsefulLinks/UsefulLinks';
 import News from './components/News/News';
 import NavBar from './components/NavBar/NavBar';
 import Footer from './components/Footer/Footer';
-
+import NewsCopySection from './components/NewsCopy/NewsCopy';
 
 function App() {
   return (
@@ -13,7 +13,8 @@ function App() {
       <NavBar />
       <HeroSection />
       <UsefulLinks />
-      {/* <News /> */}
+      <News />
+      {/* <NewsCopySection/> */}
       <Footer />
     </div>
     </>

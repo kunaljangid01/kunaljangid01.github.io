@@ -49,9 +49,11 @@
     } 
     .hero_section_about{
         width: 100%;
+        justify-content: center;
     }
     .linksWrapper {
         padding: 40px 0px;
         box-sizing: border-box;
     }
+
 }

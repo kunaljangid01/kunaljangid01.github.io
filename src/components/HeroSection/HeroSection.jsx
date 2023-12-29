@@ -12,7 +12,7 @@ function HeroSection() {
             <div className="hero_section_about">
                 <div className='about_inner_wrapper'>
 
-                    <h1><span className="highlight-letter">V</span>isual Data Computing Group (<span className="highlight-letter">V</span>isDom)</h1>
+                    <h1 style={{textAlign:'center'}}><span className="highlight-letter">V</span>isual Data Computing Group (<span className="highlight-letter">V</span>isDom)</h1>
                     <div>
                         <p> <b>About the Group:  </b>
                             Our group tackles diverse challenges in the realm of computer vision(CV), deep learning(DL), and machine learning(ML). We continuously innovate at the intersection of these fields, driving progress and creating impactful solutions that shape the future.

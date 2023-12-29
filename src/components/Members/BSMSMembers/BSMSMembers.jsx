@@ -4,13 +4,13 @@ import './BSMSMembers.css';
 import { Card, CardContent, Typography } from '@mui/material';
 import { useState, useEffect } from 'react';
 
-const BSMSMembersCard = (props) => {
+const BSMSMembersCard = (props) => { 
     return (
         <Card className='bsmsmembersCardMui' variant='outlined' sx={{
-            ':hover': {
-                transform: 'scale(1.05)',
-            },  
-        }}>
+                ':hover': {
+                    transform: 'scale(1.05)',
+                },  
+            }}>
             {/*#F4F4F4*/}
             <CardContent className='bsmsmemebrscontent'>
                 <Typography variant="h5" component="div" align='center'>

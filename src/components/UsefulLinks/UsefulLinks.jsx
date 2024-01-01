@@ -7,11 +7,25 @@ import { Card, Typography } from '@mui/material';
 const LinkCard = (props) => {
     return (
         <a href={props.link} target="_blank" rel="noopner">
+           {props.isnew && <Card className='vacisnewLabel' variant='outlined' sx={{ padding: "10px", boxSizing: "border-box", borderColor: "white" }}>
+                
+                <Typography gutterBottom variant="h6" component="div" sx={{ margin: "0px", fontWeight: "700", color: "white" }}>
+                    {/* {props.text} */}
+                    {props.isnew && <span className='vacLabel'>New</span> }   {props.text}
+                    {/* {props.isnew && <span className='vacisnewLabel'>{props.text}</span> }   */}
+                    {/* {props.isnew==false && props.text} */}
+                </Typography>
+            </Card>
+} {props.isnew==false &&
             <Card variant='outlined' sx={{ background: "#fff0", padding: "10px", boxSizing: "border-box", borderColor: "white" }}>
                 <Typography gutterBottom variant="h6" component="div" sx={{ margin: "0px", fontWeight: "700", color: "white" }}>
                     {props.text}
+                    {/* {props.isnew && <span className='vacLabel'>New</span> }   */}
+                    {/* {props.isnew && <span className='vacisnewLabel'>{props.text}</span> }   */}
+                    {/* {props.isnew==false && props.text} */}
                 </Typography>
             </Card>
+}
         </a>
     )
 }
@@ -19,7 +33,7 @@ const LinkCard = (props) => {
 const UsefulLinks = () => {
     const [links, setLinks] = useState([]);
     useEffect(() => {
-        fetch('/data/usefulLinks.json'
+        fetch('/data/usefulLinks.json' 
             , {
                 headers: {
                     'Content-Type': 'application/json',
@@ -45,7 +59,7 @@ const UsefulLinks = () => {
                 links ?
                     links.map((link) => {
                         return (
-                            <LinkCard key={link.text} link={link.link} text={link.text} />
+                            <LinkCard key={link.text} link={link.link} text={link.text} isnew={link.isnew} />
                         )
                     })
                     :

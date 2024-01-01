@@ -100,7 +100,7 @@
 }
 
 
-.newsTitle {
+.newsTitle { 
     /* Text overflow with ellipsis */
     /* white-space: nowrap; */
     overflow:auto;

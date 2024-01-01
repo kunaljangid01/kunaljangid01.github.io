@@ -86,7 +86,7 @@ const News = () => {
         <NewsCard className='carousel_newscard' key={newsItem.title} news={newsItem}  onDragStart={handleDragStart} role="presentation" />
     ));
 
-    return (
+    return ( 
         <div className='newsWrapper news-carousel-container'>
             <h1>NEWS</h1>
             <AliceCarousel

@@ -93,7 +93,7 @@ const NewsCopySection = () => {
             {/* </div> */}
         {/* </>
     ); */}
-
+ 
     // Prepare the carousel items from the news data
     // const carouselItems = news.map((newsItem) => (
     //     <NewsCard key={newsItem.title} news={newsItem}  onDragStart={handleDragStart} role="presentation" />

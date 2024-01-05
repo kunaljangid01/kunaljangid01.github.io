@@ -13,8 +13,8 @@ function App() {
       <NavBar />
       <HeroSection />
       <UsefulLinks />
-      <News />
-      {/* <NewsCopySection/> */}
+      {/* <News /> */}
+      <NewsCopySection/>
       <Footer />
     </div>
     </>

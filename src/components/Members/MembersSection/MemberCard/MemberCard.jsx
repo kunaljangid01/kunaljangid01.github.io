@@ -61,7 +61,10 @@ const MemberCard = (props) => {
                             {
                                 props.email &&
                                 <div style={{  color: "#574E4F" }}>
-                                     Email: <span style={{ cursor: 'pointer', textDecoration: 'underline' }}>{email}</span>
+                                     {/* Email: <span style={{ cursor: 'pointer', textDecoration: 'underline' }}>{email}</span> */}
+                                      <b>Email:</b><Button  onClick={toggleEmail} style={{margin:'auto', color:'#574E4F', fontSize:'14.5px'}} className=''>
+                                        <span style={{ textTransform: 'lowercase', cursor: 'pointer', textDecoration: 'underline' }}>{email}</span>
+                                    </Button>
                                 </div>
                             }
                             {

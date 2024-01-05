@@ -35,10 +35,10 @@ root.render(
         <Route path="/group-members" element={<GroupMembers />} />
         <Route path="/projects" element={<Projects />} />
         <Route path="/publications" element={<Publications />} />
-        <Route path="/resources" element={<Resources />} />
+        {/* <Route path="/resources" element={<Resources />} /> */}
 
       </Routes>
-      </HashRouter>
+      </HashRouter> 
     {/* </BrowserRouter> */}  
     </ThemeProvider>
   </React.StrictMode>

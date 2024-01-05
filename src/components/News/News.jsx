@@ -95,14 +95,19 @@ const News = () => {
                 mouseTracking
                 items={carouselItems}
                 autoPlay
-                autoPlayInterval={1300}
+                autoPlayInterval={600}
+                // autoPlayStrategy="none" 
+                vertical = "true"
+          
+                animationDuration={600} 
+                // Duration of the slide animation for smooth transitions
                 infinite
                 dotsDisabled={false} // Enables dots for navigation, use `true` to disable
-    buttonsDisabled={true} // Disables the navigation buttons, use `false` to enable
-    responsive={{
-        0: { items: 1 },
-        1024: { items: 3 }, // Adjust to show 3 items on wider screens
-    }}
+                buttonsDisabled={true} // Disables the navigation buttons, use `false` to enable
+                responsive={{
+                    0: { items: 1 },
+                    1024: { items: 3 }, // Adjust to show 3 items on wider screens
+                }}
                 
             />
         </div>

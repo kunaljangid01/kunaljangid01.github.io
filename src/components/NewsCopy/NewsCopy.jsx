@@ -79,7 +79,7 @@ const NewsCopySection = () => {
     const settings = {
         dots: false,
         infinite: true,
-        speed: 1400, // Minimize the transition speed
+        speed: 1800, // Minimize the transition speed
         slidesToShow: 4,
         slidesToScroll: 1,
         autoplay: true,

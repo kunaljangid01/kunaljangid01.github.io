@@ -1,0 +1,27 @@
+[
+    {
+        "name": "Yashika Patil",
+        "designation": "BS",
+        "about": "3D Face Reconstruction"
+    },
+    {
+        "name": "Chetan S. Reddy",
+        "designation": "BS",
+        "about": "Stock Market Prediction"
+    },
+    {
+        "name": "Shubham Latpate",
+        "designation": "BS",
+        "about": "Video Incremental Learning"
+    },
+    {
+        "name": "Anuradha Mahoto",
+        "designation": "BS",
+        "about": "Mallampati Classification"
+    },
+    {
+        "name": "Shraddha Agarwal",
+        "designation": "BS",
+        "about": "Brain Tumor Segmentation"
+    }
+]

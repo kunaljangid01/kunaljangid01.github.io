@@ -1,0 +1,19 @@
+[
+    {
+        "name": "Rini Smita Thakur",
+        "designation": "Project-JRF",
+        "about": "Domain Adaptation"
+    },
+    {
+        "name": "Shivam Pal",
+        "designation": "Project-JRF",
+        "about": "Bias Free Learning"
+    },
+    {
+        "name": "Riyansha Singh",
+        "designation": "Project-JRF",
+        "about": "Few Shot Class Incremental Learning"
+    }
+    
+
+]

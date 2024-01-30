@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.css": "/kunaljangid.github.io/static/css/main.4b07dedb.css",
-    "main.js": "/kunaljangid.github.io/static/js/main.679f8f53.js",
-    "index.html": "/kunaljangid.github.io/index.html",
-    "main.4b07dedb.css.map": "/kunaljangid.github.io/static/css/main.4b07dedb.css.map",
-    "main.679f8f53.js.map": "/kunaljangid.github.io/static/js/main.679f8f53.js.map"
+    "main.css": "/static/css/main.4b07dedb.css",
+    "main.js": "/static/js/main.679f8f53.js",
+    "index.html": "/index.html",
+    "main.4b07dedb.css.map": "/static/css/main.4b07dedb.css.map",
+    "main.679f8f53.js.map": "/static/js/main.679f8f53.js.map"
   },
   "entrypoints": [
     "static/css/main.4b07dedb.css",

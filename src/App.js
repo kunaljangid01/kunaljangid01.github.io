@@ -1,10 +1,10 @@
 import './App.css';
 import HeroSection from './components/HeroSection/HeroSection';
-import UsefulLinks from './components/UsefulLinks/UsefulLinks';
-import News from './components/News/News';
+// import UsefulLinks from './components/UsefulLinks/UsefulLinks';
+// import News from './components/News/News';
 import NavBar from './components/NavBar/NavBar';
 import Footer from './components/Footer/Footer';
-import NewsCopySection from './components/NewsCopy/NewsCopy';
+// import NewsCopySection from './components/NewsCopy/NewsCopy';
 
 function App() {
   return (
@@ -12,9 +12,9 @@ function App() {
     <div className='main'>
       <NavBar />
       <HeroSection />
-      <UsefulLinks />
+      {/* <UsefulLinks /> */}
       {/* <News /> */}
-      <NewsCopySection/>
+      {/* <NewsCopySection/> */}
       <Footer />
     </div>
     </>

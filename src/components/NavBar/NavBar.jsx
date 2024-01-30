@@ -5,10 +5,10 @@ import './NavBar.css';
 //react icons
 import { FaBarsStaggered, FaBook, FaXmark } from "react-icons/fa6";
 import { useLocation } from "react-router-dom";
-import visdomLogoNav from '../../assets/logo_2.png';
+// import visdomLogoNav from '../../assets/logo_2.png';
 
-import visdomLogo from '../../assets/visdom_small2.png';
-import iiserbLogo from '../../assets/iiserb_small3.png';
+// import visdomLogo from '../../assets/visdom_small2.png';
+// import iiserbLogo from '../../assets/iiserb_small3.png';
 
 const Navbar = () =>{
     
@@ -46,9 +46,9 @@ const Navbar = () =>{
     //Nav items
     const navItems = [
         {link: "Home", path: "/"},
-        {link: "Members", path: "/group-members"},
-        {link: "Projects", path: "/projects"},
-        {link: "Publications", path: "/publications"},
+        // {link: "Members", path: "/group-members"},
+        // {link: "Projects", path: "/projects"},
+        // {link: "Publications", path: "/publications"},
         // {link: "Resources", path: "/resources"},
     ]
 
@@ -58,9 +58,9 @@ const Navbar = () =>{
                 <div className="flex items-center text-base gap-8">
                     {/* logo */}
               
-                    <Link to = "https://www.iiserb.ac.in/" className="text-2sxl font-bold flex items-baseline self-start  whitespace-nowrap	" sx={{marginRight:'0px'}}><img src={iiserbLogo} alt="Logo" sx={{marginLeft:'0px'}}/></Link>
+                    {/* <Link to = "https://www.iiserb.ac.in/" className="text-2sxl font-bold flex items-baseline self-start  whitespace-nowrap	" sx={{marginRight:'0px'}}><img src={iiserbLogo} alt="Logo" sx={{marginLeft:'0px'}}/></Link>
                     <Link to = "/" className="text-2sxl font-bold flex items-baseline self-start grow whitespace-nowrap	"><img src={visdomLogo} alt="Logo" /></Link>
-                    
+                     */}
                     
 
                     {/* nav items for large devices */}

@@ -48,8 +48,9 @@ const Navbar = () =>{
         {link: "Home", path: "/"},
         // {link: "Members", path: "/group-members"},
         // {link: "Projects", path: "/projects"},
-        // {link: "Publications", path: "/publications"},
+        {link: "Publications", path: "/publications"},
         // {link: "Resources", path: "/resources"},
+        {link: "Contact", path: "/contact"},
     ]
 
     return (

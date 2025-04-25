@@ -6,9 +6,11 @@ import App from './App';
 import { BrowserRouter, Routes, Route, HashRouter } from "react-router-dom";
 // import HeroSection from './components/HeroSection/HeroSection';
 // import GroupMembers from './components/Members/GroupMembers';
-// import Publications from './components/Publications/Publications';
+import Publications from './components/Publications/Publications';
 // import Projects from './components/Projects/Projects';
 // import Resources from './components/Resources/Resources';
+
+import ContactSection from './components/ContactSection/ContactSection';
 
 import { createTheme, ThemeProvider } from '@mui/material';
 const theme = createTheme({
@@ -31,11 +33,16 @@ root.render(
       <Routes>
 
         <Route path="/" element={<App />} />
+        
+
         {/* <Route path="/home" element={<App />} /> */}
         {/* <Route path="/group-members" element={<GroupMembers />} />
         <Route path="/projects" element={<Projects />} />
-        <Route path="/publications" element={<Publications />} /> */}
+        //  */}
         {/* <Route path="/resources" element={<Resources />} /> */}
+        <Route path="/publications" element={<Publications />} />
+        <Route path="/contact" element={<ContactSection />} />
+       
 
       </Routes>
       </HashRouter> 

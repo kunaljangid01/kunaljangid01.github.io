@@ -1,14 +1,18 @@
 {
   "files": {
-    "main.css": "/static/css/main.e3464031.css",
-    "main.js": "/static/js/main.44035271.js",
+    "main.css": "/static/css/main.d04e0dcb.css",
+    "main.js": "/static/js/main.cf44a6d3.js",
     "static/media/kunal.png": "/static/media/kunal.5888f272136f88652ff4.png",
+    "static/media/ReLiSAM.png": "/static/media/ReLiSAM.335708c23675baec4eba.png",
+    "static/media/EKS.png": "/static/media/EKS.2f1222c9618f90d478e9.png",
+    "static/media/CLFSeg_main.png": "/static/media/CLFSeg_main.7482a3f5f7194d45558c.png",
+    "static/media/MSC_JISTaP.png": "/static/media/MSC_JISTaP.d4099519456ee41eea0c.png",
     "index.html": "/index.html",
-    "main.e3464031.css.map": "/static/css/main.e3464031.css.map",
-    "main.44035271.js.map": "/static/js/main.44035271.js.map"
+    "main.d04e0dcb.css.map": "/static/css/main.d04e0dcb.css.map",
+    "main.cf44a6d3.js.map": "/static/js/main.cf44a6d3.js.map"
   },
   "entrypoints": [
-    "static/css/main.e3464031.css",
-    "static/js/main.44035271.js"
+    "static/css/main.d04e0dcb.css",
+    "static/js/main.cf44a6d3.js"
   ]
 }

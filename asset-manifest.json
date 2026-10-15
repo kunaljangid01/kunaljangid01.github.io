@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.30c58865.css",
-    "main.js": "/static/js/main.68d39799.js",
+    "main.css": "/static/css/main.9b4b2ee7.css",
+    "main.js": "/static/js/main.6e4f8a98.js",
     "static/media/ReLiSAM.png": "/static/media/ReLiSAM.335708c23675baec4eba.png",
     "static/media/3D_BBDA.png": "/static/media/3D_BBDA.591ca56412d8aefbf400.png",
     "static/media/strasbourg-evening.jpg": "/static/media/strasbourg-evening.3d4513696453c6588520.jpg",
@@ -20,11 +20,11 @@
     "static/media/miccai-strasbourg-thumb.jpg": "/static/media/miccai-strasbourg-thumb.1035639b6718693beb92.jpg",
     "static/media/poster-presentation-thumb.jpg": "/static/media/poster-presentation-thumb.7e77e660cd1b4339481c.jpg",
     "index.html": "/index.html",
-    "main.30c58865.css.map": "/static/css/main.30c58865.css.map",
-    "main.68d39799.js.map": "/static/js/main.68d39799.js.map"
+    "main.9b4b2ee7.css.map": "/static/css/main.9b4b2ee7.css.map",
+    "main.6e4f8a98.js.map": "/static/js/main.6e4f8a98.js.map"
   },
   "entrypoints": [
-    "static/css/main.30c58865.css",
-    "static/js/main.68d39799.js"
+    "static/css/main.9b4b2ee7.css",
+    "static/js/main.6e4f8a98.js"
   ]
 }

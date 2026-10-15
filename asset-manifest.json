@@ -1,22 +1,30 @@
 {
   "files": {
-    "main.css": "/static/css/main.128047be.css",
-    "main.js": "/static/js/main.478824c2.js",
-    "static/media/kunal.png": "/static/media/kunal.5888f272136f88652ff4.png",
+    "main.css": "/static/css/main.30c58865.css",
+    "main.js": "/static/js/main.499e435d.js",
     "static/media/ReLiSAM.png": "/static/media/ReLiSAM.335708c23675baec4eba.png",
+    "static/media/3D_BBDA.png": "/static/media/3D_BBDA.591ca56412d8aefbf400.png",
     "static/media/strasbourg-evening.jpg": "/static/media/strasbourg-evening.3d4513696453c6588520.jpg",
     "static/media/miccai-strasbourg.jpg": "/static/media/miccai-strasbourg.059aa0d4331a8daf41ab.jpg",
     "static/media/poster-presentation.jpg": "/static/media/poster-presentation.92772830b28be5101045.jpg",
+    "static/media/strasbourg-evening-display.jpg": "/static/media/strasbourg-evening-display.f83897bf7d09f5aee82f.jpg",
     "static/media/miccai-badge.jpg": "/static/media/miccai-badge.745ff75c0bb511dbb49e.jpg",
+    "static/media/miccai-strasbourg-display.jpg": "/static/media/miccai-strasbourg-display.01ade5f9c0221e535386.jpg",
+    "static/media/poster-presentation-display.jpg": "/static/media/poster-presentation-display.b0bfae5ef5e56be9b639.jpg",
+    "static/media/ReLiSAM-preview.png": "/static/media/ReLiSAM-preview.18c0af492171d1f7b9d5.png",
     "static/media/EKS.png": "/static/media/EKS.2f1222c9618f90d478e9.png",
     "static/media/CLFSeg_main.png": "/static/media/CLFSeg_main.7482a3f5f7194d45558c.png",
+    "static/media/kunal-home.jpg": "/static/media/kunal-home.dc5fa29ee0cc0b3c34f4.jpg",
+    "static/media/miccai-badge-display.jpg": "/static/media/miccai-badge-display.ab8c04a97ac2d88f8547.jpg",
     "static/media/MSC_JISTaP.png": "/static/media/MSC_JISTaP.d4099519456ee41eea0c.png",
+    "static/media/miccai-strasbourg-thumb.jpg": "/static/media/miccai-strasbourg-thumb.1035639b6718693beb92.jpg",
+    "static/media/poster-presentation-thumb.jpg": "/static/media/poster-presentation-thumb.7e77e660cd1b4339481c.jpg",
     "index.html": "/index.html",
-    "main.128047be.css.map": "/static/css/main.128047be.css.map",
-    "main.478824c2.js.map": "/static/js/main.478824c2.js.map"
+    "main.30c58865.css.map": "/static/css/main.30c58865.css.map",
+    "main.499e435d.js.map": "/static/js/main.499e435d.js.map"
   },
   "entrypoints": [
-    "static/css/main.128047be.css",
-    "static/js/main.478824c2.js"
+    "static/css/main.30c58865.css",
+    "static/js/main.499e435d.js"
   ]
 }
